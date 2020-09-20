@@ -1,0 +1,468 @@
+* {
+  -webkit-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+}
+
+body {
+  font-family: "Exo 2", sans-serif !important;
+  background: #f5f7fa;
+}
+
+.bg-light {
+  background: #ffffff !important;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+ul {
+  list-style: none !important;
+}
+
+.dropdown .dropdown-menu {
+  border: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.search .search-input {
+  background: transparent;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  border-bottom: 1px solid #dfe2e6;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.search .search-input:focus {
+  border-bottom: 1px solid #303956;
+}
+
+.search .search-submit {
+  border: 1px solid transparent !important;
+  outline: none !important;
+  background: #303956;
+  color: #fff;
+  padding: 5px 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.search .search-submit:hover {
+  background: #303956;
+  opacity: 80%;
+}
+
+.page-separator {
+  margin: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.page-separator::before {
+  content: "";
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 87%;
+  right: 17px;
+  position: absolute;
+  z-index: -1;
+}
+
+.page-separator .page-separator__text {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-radius: 0.25rem;
+  background-color: #f5f7fa;
+  max-width: 90%;
+  text-transform: uppercase;
+  font-size: 22px;
+  color: #303956;
+  font-weight: 600;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  -o-object-fit: cover !important;
+  object-fit: cover !important;
+}
+
+.card .card-body {
+  color: #272c33;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.card .card-body p {
+  font-size: 12px;
+  margin: 0 !important;
+}
+
+.card .card-footer span {
+  font-size: 13px;
+  background: #334455;
+  padding: 5px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+.card .card-footer span i {
+  margin-right: 5px;
+}
+
+.card::before {
+  position: absolute;
+  top: 100%;
+  left: 10px;
+  right: 10px;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  border-radius: 0 0 0.5rem 0.5rem;
+  -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.07), inset 0 2px 1px -1px #dfe2e6,
+    inset 0 1px 2px 0 rgba(223, 226, 230, 0.14),
+    inset 0 1px 3px 0 rgba(48, 56, 64, 0.12);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.07), inset 0 2px 1px -1px #dfe2e6,
+    inset 0 1px 2px 0 rgba(223, 226, 230, 0.14),
+    inset 0 1px 3px 0 rgba(48, 56, 64, 0.12);
+  display: block;
+  content: "";
+  background: #fff;
+  height: 5px;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.pagination {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 15px;
+}
+.pagination .page-item {
+  margin: 0px 5px;
+}
+.pagination .page-item .page-link {
+  border: 1px solid #303956;
+}
+.pagination .page-item.active .page-link {
+  background: #303956;
+}
+.pagination .page-link.disabled {
+  display: none;
+}
+.pagination .page-link.prev,
+.pagination .page-link.next {
+  border: 1px solid #303956;
+  color: #303956;
+}
+
+.pagination .prev.active,
+.pagination .next.active {
+  background: #303956;
+  cursor: pointer;
+  color: #fff;
+  cursor: pointer;
+}
+
+.resume .page-title {
+  text-align: center;
+}
+
+.resume .page-title i {
+  font-size: 70px;
+  color: #334455 !important;
+}
+
+.resume .page-title h1 {
+  font-size: 64px !important;
+  color: #334455;
+  letter-spacing: -4px;
+  line-height: 30px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+.resume .coding-skills {
+  position: relative;
+}
+
+.resume .coding-skills .section-title {
+  position: relative;
+  z-index: 10;
+}
+
+.resume .coding-skills .section-title h2 {
+  margin: 0;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  position: relative;
+  display: inline-block;
+  font-weight: normal;
+  letter-spacing: 0.2em;
+  white-space: nowrap;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.resume .coding-skills .section-title h2 i {
+  display: inline-block;
+  position: relative;
+  padding: 0.8em 3em;
+  font-style: normal;
+  color: #fff;
+  background-color: #8acb82;
+}
+
+.resume .coding-skills .section-title h2 i::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: -0.5em;
+  left: -0.05em;
+  pointer-events: none;
+  bottom: auto;
+  top: -0.5em;
+  border-bottom: 0.5em solid #080b0c;
+  border-bottom: 0.5em solid rgba(8, 11, 12, 0.2);
+  border-left: 0.5em solid transparent;
+}
+
+.resume .coding-skills .section-title h2 i::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: -0.5em;
+  left: -0.05em;
+  pointer-events: none;
+  left: auto;
+  right: -0.05em;
+  border-top: 0.5em solid #080b0c;
+  border-top: 0.5em solid rgba(8, 11, 12, 0.2);
+  border-right: 0.5em solid transparent;
+}
+
+.resume .coding-skills .section-title h2::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: -0.5em;
+  width: 2em;
+  height: 100%;
+  background-color: #7db376;
+  pointer-events: none;
+  bottom: auto;
+  top: -0.5em;
+  left: -1.57em;
+  z-index: -1;
+}
+
+.resume .coding-skills .section-title h2::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: -0.5em;
+  width: 2em;
+  height: 100%;
+  background-color: #7db376;
+  pointer-events: none;
+  right: -1.57em;
+  z-index: -1;
+}
+
+.resume .coding-skills .skill-progress {
+  font-family: "Montserrat", sans-serif !important;
+  margin-top: 20px;
+  padding-bottom: 1.1em;
+  padding-right: 32px;
+  position: relative;
+}
+
+.resume .coding-skills .skill-progress h4 {
+  margin: 0 0 4px 0;
+  font-size: 14px !important;
+  position: relative;
+  z-index: 100;
+  padding-left: 0px;
+  font-weight: bold;
+}
+
+.resume .coding-skills .skill-progress .progress {
+  background-color: #e9e9e9;
+}
+
+.resume .coding-skills .skill-progress .progress-bar {
+  background: #7db376;
+}
+
+.resume .coding-skills .skill-progress .progress-text {
+  position: absolute;
+  top: 0px;
+  right: 0%;
+  margin-left: -2px;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  width: 42px;
+  line-height: 42px;
+  color: #345;
+  padding: 0 6px;
+  background: #7db376;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.resume .education {
+  margin-left: 20px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.resume .education::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  bottom: -10px;
+  width: 4px;
+  left: -12px;
+  background: #8acb82;
+}
+
+.resume .education::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -17px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #8acb82;
+}
+
+.resume .education h2 {
+  margin-left: 0.6em;
+  margin-bottom: 0.4em;
+  font-size: 1.3em;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+
+.resume .education p {
+  margin: 0.6em 0 0.2em 0;
+  font-size: 15px;
+  padding-top: 30px;
+}
+
+.resume .education p i {
+  display: block;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  position: absolute;
+  top: -14px;
+  left: -36px;
+  width: 52px;
+  line-height: 52px;
+  margin: 0;
+  z-index: 120;
+  color: #fff;
+  background: #8acb82;
+  border-radius: 50%;
+}
+
+.resume .education h3 {
+  display: inline-block;
+  position: relative;
+  padding: 3px 8px;
+  font-size: 13px;
+  line-height: 1.3;
+  font-weight: 400;
+  letter-spacing: 0;
+  margin: 0 0 1.5em 0;
+  text-transform: uppercase;
+  color: #fff;
+  background: #8acb82;
+}
+
+.resume .education h3::before {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 0;
+  border: 11px solid #8acb82;
+  z-index: -1;
+  left: -1.2em;
+  border-right-width: 10px;
+  border-left-color: transparent !important;
+}
+
+.resume .education h4 {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 0.2em 0;
+  padding: 0;
+}
+
+.resume .education h4 a {
+  text-transform: lowercase;
+}
+
+.resume .education h5 {
+  margin: 0;
+  padding: 0 0 0.3em 0;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(28, 38, 43, 0.5);
+}
+
+.btn-dark {
+  background: #334455 !important;
+}
+
+.project-form {
+  border: 1px solid #dfe2e6;
+  background: #fff;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.project-form .form-control {
+  margin-bottom: 10px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid #dfe2e6;
+  border-radius: 0;
+  position: relative;
+}
+
+.project-form .form-control:focus {
+  border-bottom: 1px solid #334455;
+}
+/*# sourceMappingURL=custom.css.map */
